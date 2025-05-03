@@ -1,3 +1,34 @@
+Metadata-Version: 2.4
+Name: trustvault-sdk
+Version: 0.1.0
+Summary: Lightweight Python SDK for application observability (TrustVault)
+Home-page: https://github.com/sanjuskm/trustvault
+Author: sanjay
+Author-email: sanju.skm@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
  # TrustVault SDK
 
  TrustVault SDK is a lightweight Python library for application observability. It provides simple decorators and context managers to automatically trace function calls, capture timing, inputs, outputs, and errors, and emit structured JSON logs to stdout.
@@ -99,47 +130,6 @@ logger = logging.getLogger("trustvault")
  - **get_logger()**: Returns the internal SDK logger.
  - **safe_log(record)**: Safely logs a JSON record, catching any logger errors.
 
-## Publishing to PyPI
-
-To make your SDK available via PyPI, follow these steps:
-
-1. Create a `~/.pypirc` file with your PyPI API token:
-   ```ini
-   [distutils]
-   index-servers =
-       pypi
-
-   [pypi]
-   username = __token__
-   password = pypi-<your-token-here>
-   ```
-
-2. (Optional but recommended) Create and activate a virtual environment:
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
-
-3. Install build tools:
-   ```bash
-   pip install --upgrade build twine
-   ```
-
-4. Build source and wheel distributions:
-   ```bash
-   python3 -m build
-   ```
-
-5. Upload to PyPI:
-   ```bash
-   twine upload dist/*
-   ```
-
-Your package will then be available for anyone to install via:
-```bash
-pip install trustvault-sdk
-```
-
-## Contributing
+ ## Contributing
 
  Contributions are welcome! Please open an issue or submit a pull request.

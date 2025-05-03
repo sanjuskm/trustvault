@@ -1,5 +1,5 @@
 import time
-from trustvaultClient import vault_it
+from trustvaultClient.trustvault_sdk import vault_it # from trustvault_sdk import vault_it
 
 @vault_it
 def add(a, b):
