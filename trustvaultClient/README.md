@@ -17,21 +17,23 @@
  pip install trustvault-sdk
  ```
 
- Or install directly from source:
- ```bash
- git clone https://github.com/<your-org>/trustvault-sdk.git
- cd trustvault-sdk
- pip install .
- ```
+Or install directly from source:
+```bash
+git clone https://github.com/sanjuskm/trustvault.git
+cd trustvault
+pip install .
+```
 
  For development (editable install):
  ```bash
  pip install -e .
  ```
 
- ## Quickstart
+## How to use the package
 
- ### Automatic instrumentation
+### Quickstart
+
+#### Automatic instrumentation
 
 ```python
 from trustvault_sdk import vault_it
@@ -60,7 +62,7 @@ from trustvault_sdk import vault_it
  }
  ```
 
- ### Manual instrumentation
+#### Manual instrumentation
 
 ```python
 from trustvault_sdk.tracer import Span
@@ -71,7 +73,7 @@ from trustvault_sdk.tracer import Span
          pass
  ```
 
- ### Customizing span names
+#### Customizing span names
 
 ```python
 from trustvault_sdk import vault_it
